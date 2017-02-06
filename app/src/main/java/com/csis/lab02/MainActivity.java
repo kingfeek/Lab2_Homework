@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
     {
         File dir = getFilesDir(); //Get current list of files in directory
         try {
-            IoUtils.extractZipResource(getResources().openRawResource(R.raw.synth), dir, true); //extract the zip file in raw called synth
+            IoUtils.extractZipResource(getResources().openRawResource(R.raw.performance), dir, true); //extract the zip file in raw called synth
             File pdPatch = new File(dir, patchName); //Create file pointer to patch
             PdBase.openPatch(pdPatch.getAbsolutePath()); //open patch
         }catch (IOException e)
